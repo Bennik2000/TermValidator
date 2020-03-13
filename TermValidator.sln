@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermValidator", "TermValidator\TermValidator.csproj", "{3B75F32E-0CAB-412E-AA81-F83214B7ACD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B75F32E-0CAB-412E-AA81-F83214B7ACD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B75F32E-0CAB-412E-AA81-F83214B7ACD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B75F32E-0CAB-412E-AA81-F83214B7ACD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B75F32E-0CAB-412E-AA81-F83214B7ACD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D0D2F5D-A83D-4975-BB04-D606533A9749}
+	EndGlobalSection
+EndGlobal
