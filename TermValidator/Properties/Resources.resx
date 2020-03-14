@@ -124,7 +124,7 @@ Command usage: TermValidator.exe &lt;termlist.xlsx&gt; &lt;fileToValidate.txt&gt
 The shape of the excel file is:
 +----------+-----------+----------------+---------------------------+----------------------------+
 | FamilyId | Value     | Classification | Negative Example          | Positive Example           |
-|----------+-----------+----------------+---------------------------+----------------------------+
++----------+-----------+----------------+---------------------------+----------------------------+
 | 1        | A bit     | Forbidden      | The interviews were a bit | The interviews were        |
 |          |           |                | difficult to schedule     | difficult to schedule      |
 | 2        | also      | Forbidden      | Also, the participants... | Moreover, the participants |

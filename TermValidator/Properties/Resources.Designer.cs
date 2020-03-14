@@ -67,7 +67,7 @@ namespace TermValidator.Properties {
         ///The shape of the excel file is:
         ///+----------+-----------+----------------+---------------------------+----------------------------+
         ///| FamilyId | Value     | Classification | Negative Example          | Positive Example           |
-        ///|----------+-----------+----------------+---------------------------+----------------------------+
+        ///+----------+-----------+----------------+---------------------------+----------------------------+
         ///| 1        | A bit     | Forbidden      | The interviews were a bit | The intervie [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
         internal static string HelpText {
