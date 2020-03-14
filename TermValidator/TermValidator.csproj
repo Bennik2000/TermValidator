@@ -73,6 +73,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="TestFiles\ForbiddenTerms_EN.xlsx" />
+    <None Include="TestFiles\ForbiddenTerms_DE.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
