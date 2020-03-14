@@ -12,7 +12,7 @@ namespace TermValidator
             TermFamilyCollection = termFamilyCollection;
         }
 
-        public IEnumerable<ValidationProblem> ValidateText(TextReader textReader)
+        public IEnumerable<ValidationProblem> ValidateText(TextReader textReader, bool caseSensitive)
         {
             var problems = new List<ValidationProblem>();
 
@@ -20,7 +20,7 @@ namespace TermValidator
             int lineNumber = 0;
             while ((line = textReader.ReadLine()) != null)
             {
-                var problemsInLine = ValidateLine(line, lineNumber);
+                var problemsInLine = ValidateLine(line, lineNumber, caseSensitive);
 
                 problems.AddRange(problemsInLine);
 
@@ -30,7 +30,7 @@ namespace TermValidator
             return problems;
         }
 
-        private IEnumerable<ValidationProblem> ValidateLine(string line, int lineNumber)
+        private IEnumerable<ValidationProblem> ValidateLine(string line, int lineNumber, bool caseSensitive)
         {
             var problems = new List<ValidationProblem>();
 
@@ -38,7 +38,7 @@ namespace TermValidator
 
             foreach (var word in words)
             {
-                var matchingResult = TermFamilyCollection.SearchMatchingTermFamily(word);
+                var matchingResult = TermFamilyCollection.SearchMatchingTermFamily(word, caseSensitive);
                 
                 if(matchingResult.family == null) continue;
 

@@ -23,7 +23,7 @@ namespace TermValidator
         }
 
 
-        public List<TermFamily> LoadTermFamilies()
+        public TermFamilyCollection LoadTermFamilies()
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
@@ -55,7 +55,7 @@ namespace TermValidator
 
             }
 
-            return termFamilies.Values.ToList();
+            return new TermFamilyCollection(termFamilies.Values.ToList());
         }
 
         private Dictionary<string, int> GetColumnIdsFromHeaders(ExcelWorksheet worksheet)

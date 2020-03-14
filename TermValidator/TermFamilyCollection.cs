@@ -6,16 +6,14 @@ namespace TermValidator
 {
     class TermFamilyCollection
     {
-        public readonly IReadOnlyCollection<TermFamily> TermFamilies;
-        public readonly bool CaseSensitive;
+        public readonly IReadOnlyCollection<TermFamily> TermFamilies; 
 
-        public TermFamilyCollection(IReadOnlyCollection<TermFamily> termFamilies, bool caseSensitive)
+        public TermFamilyCollection(IReadOnlyCollection<TermFamily> termFamilies)
         {
             TermFamilies = termFamilies;
-            CaseSensitive = caseSensitive;
         }
 
-        public (TermFamily family, Term term) SearchMatchingTermFamily(string term)
+        public (TermFamily family, Term term) SearchMatchingTermFamily(string term, bool caseSensitive)
         {
             term = term.Trim();
 
@@ -25,7 +23,7 @@ namespace TermValidator
                 f.Terms.Any(t =>
                 {
                     var isMatch = t.Value.Equals(term,
-                        CaseSensitive
+                        caseSensitive
                             ? StringComparison.CurrentCulture
                             : StringComparison.CurrentCultureIgnoreCase);
 

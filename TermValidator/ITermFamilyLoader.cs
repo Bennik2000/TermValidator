@@ -8,6 +8,6 @@ namespace TermValidator
 {
     interface ITermFamilyLoader
     {
-        List<TermFamily> LoadTermFamilies();
+        TermFamilyCollection LoadTermFamilies();
     }
 }
